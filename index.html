@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nosso Amor | Feliz Dia dos Namorados</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Floating Hearts Background -->
+    <div class="floating-hearts" id="hearts-container"></div>
+    
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <h1 class="title-font">Feliz Dia dos Namorados</h1>
+            <div class="heart-icon heart-beat">
+                <i class="fas fa-heart"></i>
+            </div>
+            <p class="subtitle">Para a pessoa mais especial da minha vida</p>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container">
+        <!-- Love Counter -->
+        <section class="counter-section">
+            <h2 class="counter-title">Nossa Jornada</h2>
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <div class="stat-number" id="days-counter">0</div>
+                    <div class="stat-label">Dias</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" id="hours-counter">0</div>
+                    <div class="stat-label">Horas</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" id="minutes-counter">0</div>
+                    <div class="stat-label">Minutos</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" id="seconds-counter">0</div>
+                    <div class="stat-label">Segundos</div>
+                </div>
+            </div>
+            <p class="counter-subtitle">Desde 09/08/2024, cada momento ao seu lado é especial</p>
+        </section>
+
+        <!-- Photo Section -->
+        <section class="photos-section">
+            <h2 class="photos-title">Nossos Momentos</h2>
+            <div class="photos-grid">
+                <div class="photo-frame">
+                    <img src="images/foto1.jpg" alt="Nossa primeira foto" class="photo-img">
+                </div>
+                <div class="photo-frame">
+                    <img src="images/foto2.jpg" alt="Momento especial" class="photo-img">
+                </div>
+                <div class="photo-frame">
+                    <img src="images/foto3.jpg" alt="Nosso amor" class="photo-img">
+                </div>
+            </div>
+        </section>
+
+        <!-- Music Player -->
+        <section class="music-section">
+            <h2 class="music-title">Nossa Música</h2>
+            <div class="music-player">
+                <div class="song-info">
+                    <div class="album-art">
+                        <i class="fas fa-music"></i>
+                    </div>
+                    <div class="song-details">
+                        <h3 id="song-title">Meu amor por você</h3>
+                        <p id="song-artist">Sua voz no meu coração</p>
+                    </div>
+                </div>
+                <div class="progress-container">
+                    <div class="progress-bar">
+                        <div class="progress" id="progress-bar"></div>
+                    </div>
+                </div>
+                <div class="time-info">
+                    <span id="current-time">0:00</span>
+                    <span id="duration">0:00</span>
+                </div>
+                <div class="player-controls">
+                    <button class="control-btn" id="prev-btn">
+                        <i class="fas fa-step-backward"></i>
+                    </button>
+                    <button class="play-btn" id="play-btn">
+                        <i class="fas fa-play" id="play-icon"></i>
+                    </button>
+                    <button class="control-btn" id="next-btn">
+                        <i class="fas fa-step-forward"></i>
+                    </button>
+                </div>
+                <audio id="audio-player" preload="metadata">
+                    <source src="musica.mp3" type="audio/mp3">
+                </audio>
+            </div>
+        </section>
+
+        <!-- Memories -->
+        <section class="memories-section">
+            <h2 class="memories-title">Nossas Lembranças</h2>
+            <div class="memory-grid">
+                <div class="memory-card">
+                    <div class="memory-icon">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <h3 class="memory-title">Nosso Primeiro Beijo</h3>
+                    <p class="memory-text">Lembro como se fosse hoje o momento em que nossos lábios se encontraram pela primeira vez...</p>
+                </div>
+                <div class="memory-card">
+                    <div class="memory-icon">
+                        <i class="fas fa-laugh-beam"></i>
+                    </div>
+                    <h3 class="memory-title">Nossas Risadas</h3>
+                    <p class="memory-text">As vezes sem motivo nenhum, começamos a rir e não conseguimos parar mais...</p>
+                </div>
+                <div class="memory-card">
+                    <div class="memory-icon">
+                        <i class="fas fa-hands-helping"></i>
+                    </div>
+                    <h3 class="memory-title">Nosso Apoio</h3>
+                    <p class="memory-text">Nos momentos difíceis, sempre estamos um para o outro, e isso é o que nos torna fortes...</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Love Letter -->
+        <section class="love-letter">
+            <h2 class="letter-title">Para Você</h2>
+            <div class="letter-heart heart-beat">
+                <i class="fas fa-heart"></i>
+            </div>
+            <div class="letter-content">
+                <p>Meu amor,</p>
+                <p>Neste Dia dos Namorados, quero expressar o quanto você significa para mim. Cada dia desde 09/08/2024 tem sido uma bênção na minha vida, e sou grato por cada momento que passamos juntos.</p>
+                <p>Você ilumina meus dias com seu sorriso, seu jeito único de ser e toda a bondade que carrega consigo. Quando estou com você, o mundo parece fazer mais sentido, os problemas ficam menores e a felicidade se torna algo natural.</p>
+                <p>Prometo continuar sendo seu porto seguro, seu parceiro em todas as aventuras e seu maior fã. Que possamos construir muitos mais momentos especiais juntos e que nosso amor só cresça com o tempo.</p>
+                <p><strong>Com todo meu amor,</strong></p>
+                <p class="letter-signature">Seu Eterno Apaixonado</p>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>Feito com <i class="fas fa-heart"></i> especialmente para você</p>
+        <p>Dia dos Namorados, 12 de Junho de 2024</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
